@@ -1,11 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=HTML/index.html">
     <title>VivaLaço</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
-    <p>Redirecionando para o VivaLaço...</p>
+
+<header>
+</header>
+
+<nav class="menu">
+
+    <button class="menu-toggle" aria-label="Abrir menu">
+        ☰
+    </button>
+
+    <div class="menu-links">
+
+        <a href="index.html">Início</a>
+
+        <div class="dropdown">
+
+            <a href="projetos.html">Projetos</a>
+
+            <div class="dropdown-content">
+                <a href="projetos.html">Ações solidárias</a>
+                <a href="projetos.html">Campanhas</a>
+            </div>
+
+        </div>
+
+        <a href="cadastro.html">Cadastre-se</a>
+
+    </div>
+
+</nav>
+
+<main>
+
+    <section>
+
+        <h1>VivaLaço</h1>
+
+        <img
+            src="vivalaco-logo.png"
+            alt="Logo da organização VivaLaço"
+            width="500"
+        >
+
+        <p>Conectando pessoas para transformar vidas.</p>
+
+        <h2>Sobre a VivaLaço</h2>
+
+        <p>
+            A VivaLaço é uma organização que busca conectar pessoas
+            e promover ações solidárias para ajudar comunidades que
+            precisam de apoio.
+        </p>
+
+    </section>
+
+    <section>
+
+        <h2>Entre em contato</h2>
+
+        <p>E-mail: contato@vivalaco.org</p>
+        <p>Telefone: (11) 90909-0808</p>
+        <p>Endereço: São Paulo - SP</p>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        © 2026 VivaLaço - Todos os direitos reservados.
+    </p>
+
+</footer>
+
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+
+    menuToggle.addEventListener("click", function () {
+        document.querySelector(".menu-links").classList.toggle("ativo");
+    });
+</script>
+
 </body>
+
 </html>
